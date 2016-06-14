@@ -1,0 +1,9 @@
+<h1>Committees List</h1>
+<hr>
+<ul>
+  {{#each model as |committee|}}
+    <p><strong>Committee:</strong> {{committee.name}}</p>
+    <p><strong>Chamber:</strong> {{committee.chamber}}</p>
+    <hr>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+
+<h1>Legislators List</h1>
+<hr>
+<ul>
+  {{#each model as |legislator|}}
+    Legislator: {{legislator.first_name}} {{legislator.last_name}}<br>
+    Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a>
+    <hr>
+  {{/each}}
+</ul>
