@@ -1,0 +1,10 @@
+<h1>Recent Bills List</h1>
+<p>Bills that have passed the house and senate and are awaiting the president's signature</p>
+<hr>
+<ul>
+  {{#each model as |bill|}}
+    {{bill-detail bill=bill}}
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}home{{/link-to}}
